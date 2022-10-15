@@ -1,0 +1,10 @@
+|LAB2_TN2
+x => out.IN0
+y => out.IN0
+y => out.IN0
+y => out.IN1
+z => out.IN1
+z => out.IN1
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+
