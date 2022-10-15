@@ -1,0 +1,35 @@
+|LAB2_TN6
+res[0] <= LS138:icLS138.Y
+res[1] <= LS138:icLS138.Y
+res[2] <= LS138:icLS138.Y
+res[3] <= LS138:icLS138.Y
+res[4] <= LS138:icLS138.Y
+res[5] <= LS138:icLS138.Y
+res[6] <= LS138:icLS138.Y
+res[7] <= LS138:icLS138.Y
+x => x.IN1
+y => y.IN1
+z => z.IN1
+a_show <= x.DB_MAX_OUTPUT_PORT_TYPE
+b_show <= y.DB_MAX_OUTPUT_PORT_TYPE
+c_show <= z.DB_MAX_OUTPUT_PORT_TYPE
+final_res <= final_res.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2_TN6|LS138:icLS138
+G2A => Decoder0.IN0
+G2B => Decoder0.IN1
+G1 => Decoder0.IN2
+A => Decoder0.IN3
+B => Decoder0.IN4
+C => Decoder0.IN5
+Y[0] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y[5] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y[6] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+Y[7] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
