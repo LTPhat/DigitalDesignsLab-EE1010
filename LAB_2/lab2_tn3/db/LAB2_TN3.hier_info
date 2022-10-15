@@ -1,0 +1,15 @@
+|LAB2_TN3
+x => out.IN0
+x => out.IN1
+x => a.DATAIN
+y => out.IN0
+y => b.DATAIN
+y => out.IN1
+z => out.IN1
+z => c.DATAIN
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+a <= x.DB_MAX_OUTPUT_PORT_TYPE
+b <= y.DB_MAX_OUTPUT_PORT_TYPE
+c <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
