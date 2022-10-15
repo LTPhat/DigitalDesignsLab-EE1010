@@ -1,0 +1,31 @@
+|LAB2_TN4
+res <= LS151:icLS151.Y
+G => G.IN1
+x => x.IN1
+y => y.IN1
+z => z.IN1
+a_show <= x.DB_MAX_OUTPUT_PORT_TYPE
+b_show <= y.DB_MAX_OUTPUT_PORT_TYPE
+c_show <= z.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|LAB2_TN4|LS151:icLS151
+G => Mux0.IN16
+G => Mux1.IN16
+S2 => Mux0.IN17
+S2 => Mux1.IN17
+S1 => Mux0.IN18
+S1 => Mux1.IN18
+S0 => Mux0.IN19
+S0 => Mux1.IN19
+D0 => Mux0.IN8
+D1 => Mux0.IN9
+D2 => Mux0.IN10
+D3 => Mux0.IN11
+D4 => Mux0.IN12
+D5 => Mux0.IN13
+D6 => Mux0.IN14
+D7 => Mux0.IN15
+Y <= Y$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
