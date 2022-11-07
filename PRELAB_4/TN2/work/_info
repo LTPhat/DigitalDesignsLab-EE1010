@@ -1,0 +1,96 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.3 2021.07, Jul 13 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/runner
+T_opt
+!s110 1667795068
+VLe90614zEc7L2<Uo0[e9e3
+04 9 4 work testbench fast 0
+=1-000ae431a4f1-6368887c-a0c-d
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc=npr
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.3;73
+vFA_ex2
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1667795067
+!i10b 1
+!s100 _JV_on6XJRdGA0WH635Y`3
+I=VL8?FoAbAd1l>M?:=<OS3
+S1
+R0
+Z4 w1667795065
+Z5 8design.sv
+Z6 Fdesign.sv
+!i122 0
+L0 3 13
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2021.3;73
+r1
+!s85 0
+31
+Z9 !s108 1667795067.000000
+Z10 !s107 testbench.sv|design.sv|
+Z11 !s90 -writetoplevels|questa.tops|-timescale|1ns/1ns|design.sv|testbench.sv|
+!i113 0
+Z12 o-timescale 1ns/1ns
+R1
+n@f@a_ex2
+vLAB4_TN2
+R2
+R3
+!i10b 1
+!s100 ]>hL1jF8fk8?Z7:kICoG;1
+IA3m_cU>HAml7c;ePkh;S@3
+S1
+R0
+R4
+R5
+R6
+!i122 0
+L0 18 14
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
+n@l@a@b4_@t@n2
+vtestbench
+R2
+R3
+!i10b 1
+!s100 ]7`Ef1`<j6f5LgQ]Roa]90
+I3A4c>^Vc2]AzjS:1;[b[X0
+S1
+R0
+R4
+8testbench.sv
+Ftestbench.sv
+!i122 0
+L0 4 45
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R1
