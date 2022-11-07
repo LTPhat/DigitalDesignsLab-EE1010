@@ -1,4 +1,4 @@
-Fitter Status : Successful - Sat Oct 15 17:28:24 2022
+Fitter Status : Successful - Fri Oct 28 10:39:06 2022
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : LAB2_TN7
 Top-level Entity Name : LAB2_TN7
@@ -9,7 +9,7 @@ Total logic elements : 9 / 33,216 ( < 1 % )
     Total combinational functions : 9 / 33,216 ( < 1 % )
     Dedicated logic registers : 0 / 33,216 ( 0 % )
 Total registers : 0
-Total pins : 17 / 475 ( 4 % )
+Total pins : 13 / 475 ( 3 % )
 Total virtual pins : 0
 Total memory bits : 0 / 483,840 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 70 ( 0 % )

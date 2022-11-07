@@ -1,5 +1,5 @@
 Fitter report for LAB2_TN7
-Sat Oct 15 17:28:24 2022
+Fri Oct 28 10:39:06 2022
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,30 +10,31 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Fitter Summary
   3. Fitter Settings
   4. Parallel Compilation
-  5. Incremental Compilation Preservation Summary
-  6. Incremental Compilation Partition Settings
-  7. Incremental Compilation Placement Preservation
-  8. Pin-Out File
-  9. Fitter Resource Usage Summary
- 10. Fitter Partition Statistics
- 11. Input Pins
- 12. Output Pins
- 13. I/O Bank Usage
- 14. All Package Pins
- 15. Output Pin Default Load For Reported TCO
- 16. Fitter Resource Utilization by Entity
- 17. Delay Chain Summary
- 18. Pad To Core Delay Chain Fanout
- 19. Non-Global High Fan-Out Signals
- 20. Other Routing Usage Summary
- 21. LAB Logic Elements
- 22. LAB Signals Sourced
- 23. LAB Signals Sourced Out
- 24. LAB Distinct Inputs
- 25. Fitter Device Options
- 26. Operating Settings and Conditions
- 27. Fitter Messages
- 28. Fitter Suppressed Messages
+  5. Ignored Assignments
+  6. Incremental Compilation Preservation Summary
+  7. Incremental Compilation Partition Settings
+  8. Incremental Compilation Placement Preservation
+  9. Pin-Out File
+ 10. Fitter Resource Usage Summary
+ 11. Fitter Partition Statistics
+ 12. Input Pins
+ 13. Output Pins
+ 14. I/O Bank Usage
+ 15. All Package Pins
+ 16. Output Pin Default Load For Reported TCO
+ 17. Fitter Resource Utilization by Entity
+ 18. Delay Chain Summary
+ 19. Pad To Core Delay Chain Fanout
+ 20. Non-Global High Fan-Out Signals
+ 21. Other Routing Usage Summary
+ 22. LAB Logic Elements
+ 23. LAB Signals Sourced
+ 24. LAB Signals Sourced Out
+ 25. LAB Distinct Inputs
+ 26. Fitter Device Options
+ 27. Operating Settings and Conditions
+ 28. Fitter Messages
+ 29. Fitter Suppressed Messages
 
 
 
@@ -59,7 +60,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Fitter Summary                                                                       ;
 +------------------------------------+-------------------------------------------------+
-; Fitter Status                      ; Successful - Sat Oct 15 17:28:24 2022           ;
+; Fitter Status                      ; Successful - Fri Oct 28 10:39:06 2022           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; LAB2_TN7                                        ;
 ; Top-level Entity Name              ; LAB2_TN7                                        ;
@@ -70,7 +71,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 9 / 33,216 ( < 1 % )                            ;
 ;     Dedicated logic registers      ; 0 / 33,216 ( 0 % )                              ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 17 / 475 ( 4 % )                                ;
+; Total pins                         ; 13 / 475 ( 3 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 483,840 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 70 ( 0 % )                                  ;
@@ -140,14 +141,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
++----------------------------------------------------------------------------------------+
+; Ignored Assignments                                                                    ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Name     ; Ignored Entity ; Ignored From ; Ignored To ; Ignored Value ; Ignored Source ;
++----------+----------------+--------------+------------+---------------+----------------+
+; Location ;                ;              ; a_show     ; PIN_AB21      ; QSF Assignment ;
+; Location ;                ;              ; b_show     ; PIN_AF23      ; QSF Assignment ;
+; Location ;                ;              ; c_show     ; PIN_AE23      ; QSF Assignment ;
+; Location ;                ;              ; d_show     ; PIN_AC22      ; QSF Assignment ;
++----------+----------------+--------------+------------+---------------+----------------+
+
+
 +----------------------------------------------+
 ; Incremental Compilation Preservation Summary ;
 +---------------------+------------------------+
 ; Type                ; Value                  ;
 +---------------------+------------------------+
 ; Placement (by node) ;                        ;
-;     -- Requested    ; 0 / 30 ( 0.00 % )      ;
-;     -- Achieved     ; 0 / 30 ( 0.00 % )      ;
+;     -- Requested    ; 0 / 26 ( 0.00 % )      ;
+;     -- Achieved     ; 0 / 26 ( 0.00 % )      ;
 ;                     ;                        ;
 ; Routing (by net)    ;                        ;
 ;     -- Requested    ; 0 / 0 ( 0.00 % )       ;
@@ -170,7 +183,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 ; Partition Name                 ; # Nodes ; # Preserved Nodes ; Preservation Level Used ; Netlist Type Used ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
-; Top                            ; 27      ; 0                 ; N/A                     ; Source File       ;
+; Top                            ; 23      ; 0                 ; N/A                     ; Source File       ;
 ; hard_block:auto_generated_inst ; 3       ; 0                 ; N/A                     ; Source File       ;
 +--------------------------------+---------+-------------------+-------------------------+-------------------+
 
@@ -178,7 +191,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_files/LAB2_TN7.pin.
+The pin-out file can be found in D:/SystemVerilog/LAB_2/LAB2_TN7/output_files/LAB2_TN7.pin.
 
 
 +--------------------------------------------------------------------+
@@ -207,7 +220,7 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ;                                             ;                      ;
 ; Total LABs:  partially or completely used   ; 1 / 2,076 ( < 1 % )  ;
 ; Virtual pins                                ; 0                    ;
-; I/O pins                                    ; 17 / 475 ( 4 % )     ;
+; I/O pins                                    ; 13 / 475 ( 3 % )     ;
 ;     -- Clock pins                           ; 3 / 8 ( 38 % )       ;
 ;                                             ;                      ;
 ; Global signals                              ; 0                    ;
@@ -222,10 +235,10 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ; CRC blocks                                  ; 0 / 1 ( 0 % )        ;
 ; Average interconnect usage (total/H/V)      ; 0% / 0% / 0%         ;
 ; Peak interconnect usage (total/H/V)         ; 0% / 0% / 0%         ;
-; Maximum fan-out                             ; 10                   ;
-; Highest non-global fan-out                  ; 10                   ;
-; Total fan-out                               ; 41                   ;
-; Average fan-out                             ; 1.41                 ;
+; Maximum fan-out                             ; 9                    ;
+; Highest non-global fan-out                  ; 9                    ;
+; Total fan-out                               ; 37                   ;
+; Average fan-out                             ; 1.48                 ;
 +---------------------------------------------+----------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -259,7 +272,7 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ; Total LABs:  partially or completely used   ; 1 / 2076 ( < 1 % )  ; 0 / 2076 ( 0 % )               ;
 ;                                             ;                     ;                                ;
 ; Virtual pins                                ; 0                   ; 0                              ;
-; I/O pins                                    ; 17                  ; 0                              ;
+; I/O pins                                    ; 13                  ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 70 ( 0 % )      ; 0 / 70 ( 0 % )                 ;
 ; Total memory bits                           ; 0                   ; 0                              ;
 ; Total RAM block bits                        ; 0                   ; 0                              ;
@@ -271,7 +284,7 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ;     -- Registered Output Connections        ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Internal Connections                        ;                     ;                                ;
-;     -- Total Connections                    ; 41                  ; 0                              ;
+;     -- Total Connections                    ; 37                  ; 0                              ;
 ;     -- Registered Connections               ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; External Connections                        ;                     ;                                ;
@@ -280,7 +293,7 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ;                                             ;                     ;                                ;
 ; Partition Interface                         ;                     ;                                ;
 ;     -- Input Ports                          ; 4                   ; 0                              ;
-;     -- Output Ports                         ; 13                  ; 0                              ;
+;     -- Output Ports                         ; 9                   ; 0                              ;
 ;     -- Bidir Ports                          ; 0                   ; 0                              ;
 ;                                             ;                     ;                                ;
 ; Registered Ports                            ;                     ;                                ;
@@ -304,10 +317,10 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination ; Location assigned by ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
-; w    ; N25   ; 5        ; 65           ; 19           ; 0           ; 2                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; x    ; N26   ; 5        ; 65           ; 19           ; 1           ; 10                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; y    ; P25   ; 6        ; 65           ; 19           ; 2           ; 10                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
-; z    ; AE14  ; 7        ; 33           ; 0            ; 0           ; 10                    ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; w    ; N25   ; 5        ; 65           ; 19           ; 0           ; 1                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; x    ; N26   ; 5        ; 65           ; 19           ; 1           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; y    ; P25   ; 6        ; 65           ; 19           ; 2           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
+; z    ; AE14  ; 7        ; 33           ; 0            ; 0           ; 9                     ; 0                  ; no     ; no             ; no            ; no              ; no       ; Off          ; 3.3-V LVTTL  ; Off         ; User                 ;
 +------+-------+----------+--------------+--------------+-------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+-------------+----------------------+
 
 
@@ -316,10 +329,6 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 +-----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 ; Name      ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Cell number ; Output Register ; Output Enable Register ; Power Up High ; PCI I/O Enabled ; Open Drain ; TRI Primitive ; Bus Hold ; Weak Pull Up ; I/O Standard ; Current Strength ; Termination ; Location assigned by ; Load ; Output Enable Source ; Output Enable Group ;
 +-----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
-; a_show    ; AB21  ; 7        ; 63           ; 0            ; 2           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; b_show    ; AF23  ; 7        ; 63           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; c_show    ; AE23  ; 7        ; 63           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
-; d_show    ; AC22  ; 7        ; 63           ; 0            ; 3           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; final_res ; AE22  ; 7        ; 59           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; res[0]    ; AA13  ; 7        ; 35           ; 0            ; 0           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
 ; res[1]    ; AC14  ; 7        ; 35           ; 0            ; 1           ; no              ; no                     ; no            ; no              ; no         ; no            ; no       ; Off          ; 3.3-V LVTTL  ; 24mA             ; Off         ; User                 ; 0 pF ; -                    ; -                   ;
@@ -332,20 +341,20 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 +-----------+-------+----------+--------------+--------------+-------------+-----------------+------------------------+---------------+-----------------+------------+---------------+----------+--------------+--------------+------------------+-------------+----------------------+------+----------------------+---------------------+
 
 
-+------------------------------------------------------------+
-; I/O Bank Usage                                             ;
-+----------+------------------+---------------+--------------+
-; I/O Bank ; Usage            ; VCCIO Voltage ; VREF Voltage ;
-+----------+------------------+---------------+--------------+
-; 1        ; 0 / 64 ( 0 % )   ; 3.3V          ; --           ;
-; 2        ; 2 / 59 ( 3 % )   ; 3.3V          ; --           ;
-; 3        ; 0 / 56 ( 0 % )   ; 3.3V          ; --           ;
-; 4        ; 0 / 58 ( 0 % )   ; 3.3V          ; --           ;
-; 5        ; 2 / 65 ( 3 % )   ; 3.3V          ; --           ;
-; 6        ; 2 / 59 ( 3 % )   ; 3.3V          ; --           ;
-; 7        ; 10 / 58 ( 17 % ) ; 3.3V          ; --           ;
-; 8        ; 4 / 56 ( 7 % )   ; 3.3V          ; --           ;
-+----------+------------------+---------------+--------------+
++-----------------------------------------------------------+
+; I/O Bank Usage                                            ;
++----------+-----------------+---------------+--------------+
+; I/O Bank ; Usage           ; VCCIO Voltage ; VREF Voltage ;
++----------+-----------------+---------------+--------------+
+; 1        ; 0 / 64 ( 0 % )  ; 3.3V          ; --           ;
+; 2        ; 2 / 59 ( 3 % )  ; 3.3V          ; --           ;
+; 3        ; 0 / 56 ( 0 % )  ; 3.3V          ; --           ;
+; 4        ; 0 / 58 ( 0 % )  ; 3.3V          ; --           ;
+; 5        ; 2 / 65 ( 3 % )  ; 3.3V          ; --           ;
+; 6        ; 2 / 59 ( 3 % )  ; 3.3V          ; --           ;
+; 7        ; 6 / 58 ( 10 % ) ; 3.3V          ; --           ;
+; 8        ; 4 / 56 ( 7 % )  ; 3.3V          ; --           ;
++----------+-----------------+---------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -423,7 +432,7 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ; AB18     ; 215        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB19     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; AB20     ; 225        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AB21     ; 242        ; 7        ; a_show                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AB21     ; 242        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AB22     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AB23     ; 258        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AB24     ; 257        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -450,7 +459,7 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ; AC19     ; 222        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC20     ; 226        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC21     ; 237        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AC22     ; 241        ; 7        ; d_show                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AC22     ; 241        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AC23     ; 245        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AC24     ;            ;          ; NC                                       ;        ;              ;         ; --         ;                 ; --       ; --           ;
 ; AC25     ; 260        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
@@ -503,7 +512,7 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ; AE20     ; 224        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE21     ; 228        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE22     ; 236        ; 7        ; final_res                                ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
-; AE23     ; 244        ; 7        ; c_show                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AE23     ; 244        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AE24     ; 247        ; 6        ; ~LVDS150p/nCEO~                          ; output ; 3.3-V LVTTL  ;         ; Row I/O    ; N               ; no       ; Off          ;
 ; AE25     ; 246        ; 6        ; GND*                                     ;        ;              ;         ; Row I/O    ;                 ; no       ; Off          ;
 ; AE26     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -528,7 +537,7 @@ The pin-out file can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_f
 ; AF20     ; 223        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF21     ; 227        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF22     ; 235        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
-; AF23     ; 243        ; 7        ; b_show                                   ; output ; 3.3-V LVTTL  ;         ; Column I/O ; Y               ; no       ; Off          ;
+; AF23     ; 243        ; 7        ; GND*                                     ;        ;              ;         ; Column I/O ;                 ; no       ; Off          ;
 ; AF24     ;            ; 7        ; VCCIO7                                   ; power  ;              ; 3.3V    ; --         ;                 ; --       ; --           ;
 ; AF25     ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
 ; B1       ;            ;          ; GND                                      ; gnd    ;              ;         ; --         ;                 ; --       ; --           ;
@@ -1071,7 +1080,7 @@ Note: User assignments will override these defaults. The user specified values a
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M4Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name     ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------+--------------+
-; |LAB2_TN7                  ; 9 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 17   ; 0            ; 9 (1)        ; 0 (0)             ; 0 (0)            ; |LAB2_TN7               ; work         ;
+; |LAB2_TN7                  ; 9 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 13   ; 0            ; 9 (1)        ; 0 (0)             ; 0 (0)            ; |LAB2_TN7               ; work         ;
 ;    |LS138:icLS138|         ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |LAB2_TN7|LS138:icLS138 ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+-------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -1090,10 +1099,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; res[5]    ; Output   ; --            ; --            ; --                    ; --  ;
 ; res[6]    ; Output   ; --            ; --            ; --                    ; --  ;
 ; res[7]    ; Output   ; --            ; --            ; --                    ; --  ;
-; a_show    ; Output   ; --            ; --            ; --                    ; --  ;
-; b_show    ; Output   ; --            ; --            ; --                    ; --  ;
-; c_show    ; Output   ; --            ; --            ; --                    ; --  ;
-; d_show    ; Output   ; --            ; --            ; --                    ; --  ;
 ; final_res ; Output   ; --            ; --            ; --                    ; --  ;
 ; x         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
 ; y         ; Input    ; (0) 171 ps    ; (0) 171 ps    ; --                    ; --  ;
@@ -1119,10 +1124,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------+---------+
 ; Name                     ; Fan-Out ;
 +--------------------------+---------+
-; z                        ; 10      ;
-; y                        ; 10      ;
-; x                        ; 10      ;
-; w                        ; 2       ;
+; z                        ; 9       ;
+; y                        ; 9       ;
+; x                        ; 9       ;
+; w                        ; 1       ;
 ; final_res~0              ; 1       ;
 ; LS138:icLS138|Decoder0~7 ; 1       ;
 ; LS138:icLS138|Decoder0~6 ; 1       ;
@@ -1140,13 +1145,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------+-----------------------+
 ; Other Routing Resource Type ; Usage                 ;
 +-----------------------------+-----------------------+
-; Block interconnects         ; 17 / 94,460 ( < 1 % ) ;
-; C16 interconnects           ; 4 / 3,315 ( < 1 % )   ;
-; C4 interconnects            ; 23 / 60,840 ( < 1 % ) ;
+; Block interconnects         ; 13 / 94,460 ( < 1 % ) ;
+; C16 interconnects           ; 3 / 3,315 ( < 1 % )   ;
+; C4 interconnects            ; 14 / 60,840 ( < 1 % ) ;
 ; Global clocks               ; 0 / 16 ( 0 % )        ;
 ; Local interconnects         ; 0 / 33,216 ( 0 % )    ;
-; R24 interconnects           ; 11 / 3,091 ( < 1 % )  ;
-; R4 interconnects            ; 6 / 81,294 ( < 1 % )  ;
+; R24 interconnects           ; 6 / 3,091 ( < 1 % )   ;
+; R4 interconnects            ; 12 / 81,294 ( < 1 % ) ;
 +-----------------------------+-----------------------+
 
 
@@ -1276,6 +1281,11 @@ Info (332130): Timing requirements not specified -- quality metrics such as perf
 Info (176233): Starting register packing
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
+Warning (15705): Ignored locations or region assignments to the following nodes
+    Warning (15706): Node "a_show" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "b_show" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "c_show" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "d_show" is assigned to location or region, but does not exist in design
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:00
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -1289,9 +1299,9 @@ Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.06 seconds.
 Info (306004): Started post-fitting delay annotation
-Warning (306006): Found 13 output pins without output pin load capacitance assignment
+Warning (306006): Found 9 output pins without output pin load capacitance assignment
     Info (306007): Pin "res[0]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info (306007): Pin "res[1]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info (306007): Pin "res[2]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
@@ -1300,27 +1310,24 @@ Warning (306006): Found 13 output pins without output pin load capacitance assig
     Info (306007): Pin "res[5]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info (306007): Pin "res[6]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info (306007): Pin "res[7]" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "a_show" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "b_show" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "c_show" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
-    Info (306007): Pin "d_show" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
     Info (306007): Pin "final_res" has no specified output pin load capacitance -- assuming default load capacitance of 0 pF for timing analysis
 Info (306005): Delay annotation completed successfully
 Info (306004): Started post-fitting delay annotation
 Info (306005): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
-Info (144001): Generated suppressed messages file C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_files/LAB2_TN7.fit.smsg
-Info: Quartus II 64-Bit Fitter was successful. 0 errors, 6 warnings
+Info (144001): Generated suppressed messages file D:/SystemVerilog/LAB_2/LAB2_TN7/output_files/LAB2_TN7.fit.smsg
+Info: Quartus II 64-Bit Fitter was successful. 0 errors, 12 warnings
     Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Sat Oct 15 17:28:24 2022
-    Info: Elapsed time: 00:00:03
+    Info: Processing ended: Fri Oct 28 10:39:06 2022
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:03
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/HP/OneDrive/Máy tính/LAB2_TN7/output_files/LAB2_TN7.fit.smsg.
+The suppressed messages can be found in D:/SystemVerilog/LAB_2/LAB2_TN7/output_files/LAB2_TN7.fit.smsg.
 
 

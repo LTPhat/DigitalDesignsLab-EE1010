@@ -20,9 +20,10 @@ endcase
 end
 endmodule
 
-module LAB2_TN7(res,x,y,z,w,a_show, b_show, c_show,d_show,final_res);
+module LAB2_TN7(res,x,y,z,w,final_res);
 input x,y,z,w;
-output a_show, b_show, c_show,final_res,d_show; 
+//output a_show, b_show, c_show,final_res,d_show; 
+output final_res;
 output logic[7:0] res;
 assign a_show = x;
 assign b_show = y;

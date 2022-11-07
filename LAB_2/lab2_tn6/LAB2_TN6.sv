@@ -1,4 +1,5 @@
 // Code your design here
+//f(x,y,z) = sum(0,2,5,7) by 74LS138
 module LS138(
 input logic G2A,G2B,G1,A,B,C,
 output logic[7:0] Y);

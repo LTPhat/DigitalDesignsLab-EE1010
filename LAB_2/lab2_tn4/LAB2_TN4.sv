@@ -1,4 +1,5 @@
 // Code your design here
+// f(x,y,z) = sum(1,2,4,7) by 74LS151
 module LS151(
 input logic G,S2,S1,S0,
 input logic D0,D1,D2,D3,D4,D5,D6,D7,

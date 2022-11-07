@@ -14,14 +14,9 @@ w => final_res.IN1
 w => final_res.IN1
 w => final_res.IN1
 w => final_res.IN1
-w => d_show.DATAIN
 w => final_res.IN1
 w => final_res.IN1
 w => final_res.IN1
-a_show <= x.DB_MAX_OUTPUT_PORT_TYPE
-b_show <= y.DB_MAX_OUTPUT_PORT_TYPE
-c_show <= z.DB_MAX_OUTPUT_PORT_TYPE
-d_show <= w.DB_MAX_OUTPUT_PORT_TYPE
 final_res <= final_res.DB_MAX_OUTPUT_PORT_TYPE
 
 
