@@ -24,8 +24,8 @@ module LAB4_TN2(
 );
   assign Co = sel;
   logic C1,C2,C3;
-  FA_ex2    FA1(.A(A[0]),.B(B[0]),.C(sel),.sel(sel),.S(S0),.Ci(C1));
-  FA_ex2	FA2(.A(A[1]),.B(B[1]),.C(C1),.sel(sel),.S(S1),.Ci(C2));
-  FA_ex2	FA3(.A(A[2]),.B(B[2]),.C(C2),.sel(sel),.S(S2),.Ci(C3));
-  FA_ex2	FA4(.A(A[3]),.B(B[3]),.C(C3),.sel(sel),.S(S3),.Ci(Ci));
+  FA_ex2    FA1(.A(A[0]),.B(B[0]),.C(sel),.sel(sel),.S(S[0]),.Ci(C1));
+  FA_ex2	FA2(.A(A[1]),.B(B[1]),.C(C1),.sel(sel),.S(S[1]),.Ci(C2));
+  FA_ex2	FA3(.A(A[2]),.B(B[2]),.C(C2),.sel(sel),.S(S[2]),.Ci(C3));
+  FA_ex2	FA4(.A(A[3]),.B(B[3]),.C(C3),.sel(sel),.S(S[3]),.Ci(Ci));
   endmodule
