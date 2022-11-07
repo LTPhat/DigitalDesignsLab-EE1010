@@ -1,0 +1,78 @@
+$date
+	Mon Nov  7 03:33:18 2022
+$end
+$version
+	QuestaSim Version 2021.3
+$end
+$timescale
+	1ns
+$end
+
+$scope module testbench $end
+$var reg 4 ! I [3:0] $end
+$var wire 1 " out [6] $end
+$var wire 1 # out [5] $end
+$var wire 1 $ out [4] $end
+$var wire 1 % out [3] $end
+$var wire 1 & out [2] $end
+$var wire 1 ' out [1] $end
+$var wire 1 ( out [0] $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0(
+0'
+0&
+0%
+0$
+0#
+1"
+$end
+#5
+b1 !
+1(
+1%
+1$
+1#
+#10
+b10 !
+0(
+1&
+0%
+0$
+0"
+#15
+b11 !
+0&
+1$
+#20
+b100 !
+1(
+1%
+0#
+#25
+b101 !
+0(
+1'
+0%
+#30
+b110 !
+0$
+#35
+b111 !
+0'
+1%
+1$
+1#
+1"
+#40
+b1000 !
+0%
+0$
+0#
+0"
+#45
+b1001 !
+1$
