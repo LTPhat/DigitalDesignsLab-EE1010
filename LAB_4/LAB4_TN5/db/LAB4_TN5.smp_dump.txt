@@ -1,0 +1,10 @@
+
+State Machine - |LAB4_TN5|pre_state
+Name pre_state.S6 pre_state.S5 pre_state.S4 pre_state.S3 pre_state.S2 pre_state.S1 pre_state.S0 
+pre_state.S0 0 0 0 0 0 0 0 
+pre_state.S1 0 0 0 0 0 1 1 
+pre_state.S2 0 0 0 0 1 0 1 
+pre_state.S3 0 0 0 1 0 0 1 
+pre_state.S4 0 0 1 0 0 0 1 
+pre_state.S5 0 1 0 0 0 0 1 
+pre_state.S6 1 0 0 0 0 0 1 

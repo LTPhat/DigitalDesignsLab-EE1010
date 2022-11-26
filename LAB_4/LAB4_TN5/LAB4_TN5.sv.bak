@@ -1,0 +1,55 @@
+// Code your design here
+			input X;                        //Khai báo ngõ vào 1 bit
+           input clk;                      //Khai báo clock
+           output reg [1:0]Y;        //Khai báo ngõ ra 2 bit
+           parameter S0=3'b000, S1=3'b001, S2=3'b010, S3=3'b011, S4 =3b'100, S5 = 3b'101, S6= 3b'110; //Định nghĩa các trạng thái
+           reg [1:0]pre_state, next_state; 
+		   logic clock;
+//Các thanh ghi chưa trạng thái
+	//Khối chuyển trạng thái	
+	always_ff@(posedge clk)
+	begin
+     i = i + 1;
+     if (i == 25000000) begin
+           clock = ~ clock;
+           i = 0;
+     end
+	end
+always@(posedge clock) begin
+		if (rst)	begin
+			pre_state <= S0;	
+			end
+		else 
+			pre_state <= next_state;		
+	end
+	//Khối chuyển trạng thái
+	always@(pre_state or X) begin
+		case(pre_state)
+			S0: if (X) next_state <= S1;
+			      else next_state <= S6;
+			S1: if (!X) next_state <= S2;
+			       else next_state <= S3;
+            S2:  if (!X) next_state <= S1;
+		           else next_state <= S4;
+            S3: if (!X) next_state <= S4;
+			      else next_state <= S5;
+          	S4: if (!X) next_state <= S3;
+			      else next_state <= S6;
+            S5: if (!X) next_state <= S6;
+			      else next_state <= S1;
+            S6: if (!X) next_state <= S5;
+			      else next_state <= S2;
+		endcase;
+	end
+	//Khối tạo ngõ ra
+	always@(*) begin
+		case (pre_state)
+			S0: Y <= 3'b000;
+			S1: Y <= 3'b001;
+			S2: Y <= 3'b010;	
+			S3: Y <= 3'b011;
+         S4: Y <= 3'b100;
+			S5: Y <= 3'b101;
+			S6: Y <= 3'b110;	
+		endcase;
+	end
