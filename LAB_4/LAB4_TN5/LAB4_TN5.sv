@@ -29,15 +29,15 @@ always@(posedge clock) begin
 			      else next_state <= S6;
 			   S1: if (!X) next_state <= S2;
 			       else next_state <= S3;
-            S2:  if (!X) next_state <= S1;
+            	S2:  if (!X) next_state <= S1;
 		           else next_state <= S4;
-            S3: if (!X) next_state <= S4;
+           	 	S3: if (!X) next_state <= S4;
 			      else next_state <= S5;
-          	S4: if (!X) next_state <= S3;
+          		S4: if (!X) next_state <= S3;
 			      else next_state <= S6;
-            S5: if (!X) next_state <= S6;
+            	S5: if (!X) next_state <= S6;
 			      else next_state <= S1;
-            S6: if (!X) next_state <= S5;
+            	S6: if (!X) next_state <= S5;
 			      else next_state <= S2;
 		endcase;
 	end
@@ -48,7 +48,7 @@ always@(posedge clock) begin
 			S1: Y <= 1'b0;
 			S2: Y <= 1'b0;	
 			S3: Y <= 1'b0;
-         S4: Y <= 1'b0;
+         	S4: Y <= 1'b0;
 			S5: Y <= 1'b1;
 			S6: Y <= 1'b0;	
 		endcase;
